@@ -33,3 +33,4 @@
    - 账号名称：[歸藏(guizang.ai)]
    - 可选标语：[正儿八经学AI]
 
+> https://mp.weixin.qq.com/s/OFCgFrXNQgIT2ho3V-4Oag

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>最后10分钟文章摘要</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2C3E50',
+                        secondary: '#34495E',
+                        accent: '#F39C12'
+                    },
+                    width: {
+                        'card': '1080px'
+                    },
+                    height: {
+                        'card': '600px'
+                    }
+                }
+            }
+        };
+    </script>
+
+    <style>
+        .text-clamp-2 {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .text-clamp-3 {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        
+        .text-clamp-4 {
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex justify-center items-center min-h-screen p-5">
+    <div class="w-card h-card bg-white rounded-xl shadow-lg overflow-hidden">
+        <div class="p-8 h-full flex flex-col">
+            <header class="mb-4">
+                <h1 class="text-3xl font-bold text-primary">《最后10分钟》</h1>
+            </header>
+
+            <main class="flex-grow flex flex-row gap-6 overflow-hidden">
+                <div class="w-1/2 pr-3">
+                    <div class="bg-blue-50 rounded-lg p-5 mb-4 h-[180px]">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-lightbulb text-accent text-xl mr-3"></i>
+                            <h2 class="text-xl font-semibold text-primary">文章概要</h2>
+                        </div>
+                        <p class="text-gray-700 text-clamp-4">这篇文章涵盖了多个话题：1985年广场协议历史与当前形势对比、当日A股行情分析、美中贸易战最新动向、国内政策预期以及跨境电商行业发展。作者通过历史案例、市场观察和政策动向，对当前中国经济形势和市场走向进行了深入解读。</p>
+                    </div>
+                    
+                    <div class="bg-blue-50 rounded-lg p-5 h-[240px] overflow-hidden">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-star text-accent text-xl mr-3"></i>
+                            <h2 class="text-xl font-semibold text-primary">核心论点</h2>
+                        </div>
+                        <ul class="text-gray-700 space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-primary mt-1.5 mr-2"></i>
+                                <span>1985年的日本和2025年的中国存在相似之处，历史经验值得借鉴</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-primary mt-1.5 mr-2"></i>
+                                <span>监管层当前不希望市场出现大幅下跌，A股不能成为国内信心不足的符号</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-primary mt-1.5 mr-2"></i>
+                                <span>股指期货贴水异常扩大，反映市场避险情绪浓厚</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-primary mt-1.5 mr-2"></i>
+                                <span>预计二季度将出台降息降准等一系列经济刺激政策</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-xs text-primary mt-1.5 mr-2"></i>
+                                <span>中美贸易摩擦升级，新一轮谈判可能启动，关税水平或分阶段上调</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="w-1/2">
+                    <div class="bg-blue-50 rounded-lg p-5 h-[430px] overflow-hidden">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-chart-pie text-primary text-xl mr-3"></i>
+                            <h2 class="text-xl font-semibold text-primary">市场观察与预期</h2>
+                        </div>
+                        
+                        <div class="mb-5">
+                            <h3 class="font-medium text-primary mb-2 flex items-center">
+                                <i class="fas fa-chart-line mr-2 text-accent"></i>
+                                A股行情分析
+                            </h3>
+                            <p class="text-gray-700 bg-white rounded-md p-3 text-sm">
+                                当日两市成交额仅1.08万亿，缩减至万亿门槛边缘。国家队尾盘出手，在最后十分钟拉升沪深300 ETF，使上证指数收红，实现6连涨。中证500期指IC2506贴水187点，年化贴率达20%，远高于正常6%水平，显示市场避险情绪浓厚。
+                            </p>
+                        </div>
+                        
+                        <div class="mb-5">
+                            <h3 class="font-medium text-primary mb-2 flex items-center">
+                                <i class="fas fa-globe-americas mr-2 text-accent"></i>
+                                国际形势
+                            </h3>
+                            <p class="text-gray-700 bg-white rounded-md p-3 text-sm">
+                                特朗普政府对制药、半导体启动调查，预计加征关税。摩根士丹利预测中美将启动贸易谈判，平均关税可能分阶段上调至34%。中国黄金ETF 4月增持29吨，成为全球最大流入国。
+                            </p>
+                        </div>
+                        
+                        <div>
+                            <h3 class="font-medium text-primary mb-2 flex items-center">
+                                <i class="fas fa-landmark mr-2 text-accent"></i>
+                                政策预期
+                            </h3>
+                            <p class="text-gray-700 bg-white rounded-md p-3 text-sm">
+                                摩根士丹利预计二季度中国将降息0.15%，降准0.5%，提前发行地方建设债券，加大消费品以旧换新计划，推出全国性生育补贴，加快消化房地产库存。下半年可能推出1-1.5万亿元额外财政计划。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <footer class="mt-4 pt-3 border-t border-gray-200 text-sm text-gray-600 flex justify-between">
+                <div>
+                    <span class="font-medium">作者:</span> 猫笔刀
+                </div>
+                <div>
+                    <i class="far fa-clock mr-1"></i>发布于最新市场评论
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- 声明文档类型为 HTML5 -->
+<html lang="zh">
+<!-- 根元素，lang 属性指定文档语言为中文 -->
+<head>
+    <!-- 元数据，设置字符编码为 UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- 元数据，设置视口，使页面在不同设备上正确显示 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 设置页面标题 -->
+    <title>xcTech_公众号文章摘要AI_agent</title>
+    <!-- 引入 Tailwind CSS 库 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 引入 Font Awesome 图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        // 配置 Tailwind 主题 - 动态生成的色彩变量
+        tailwind.config = {
+            theme: {
+                extend: {
+                    // 扩展颜色变量，可在 Tailwind 类中使用
+                    colors: {
+                        primary: '#主色调代码',
+                        secondary: '#辅助色代码',
+                        accent: '#强调色代码'
+                    },
+                    // 扩展宽度变量，定义名为 card 的宽度
+                    width: {
+                        'card': '1080px'
+                    },
+                    // 扩展高度变量，定义名为 card 的高度
+                    height: {
+                        'card': '800px'
+                    }
+                }
+            }
+        };
+    </script>
+
+    <style>
+        /* 自定义文本截断类，显示两行文本，超出部分隐藏 */
+        .text-clamp-2 {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        /* 自定义文本截断类，显示三行文本，超出部分隐藏 */
+        .text-clamp-3 {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex justify-center items-center min-h-screen p-5">
+    <!-- 卡片容器，使用自定义的宽度和高度，设置背景颜色、圆角、阴影和溢出隐藏 -->
+    <div class="w-card h-card bg-white rounded-xl shadow-lg overflow-hidden">
+        <div class="p-8 h-full flex flex-col">
+            <header class="mb-6">
+                <!-- 标题区域 -->
+            </header>
+
+            <main class="flex-grow flex flex-col gap-6 overflow-hidden">
+                <!-- 核心内容区域 -->
+            </main>
+
+            <main class="flex-grow flex flex-row gap-6 overflow-hidden">
+                <!-- 核心内容区域左半部分 -->
+                <div class="w-1/2">
+                    <!-- 左半部分内容 -->
+                </div>
+                <!-- 核心内容区域右半部分 -->
+                <div class="w-1/2">
+                    <!-- 右半部分内容 -->
+                </div>
+            </main>
+
+            <footer class="mt-4 pt-4 border-t border-gray-100 text-sm text-gray-500">
+                <!-- 作者与时间 -->
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

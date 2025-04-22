@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全球恐慌 - 投资策略分析</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1E40AF',
+                        secondary: '#9CA3AF',
+                        accent: '#DC2626'
+                    },
+                    width: {
+                        'card': '1080px'
+                    },
+                    height: {
+                        'card': '600px'
+                    }
+                }
+            }
+        };
+    </script>
+
+    <style>
+        .text-clamp-2 {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .text-clamp-3 {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex justify-center items-center min-h-screen p-5">
+    <div class="w-card h-card bg-white rounded-xl shadow-lg overflow-hidden">
+        <div class="p-8 h-full flex flex-col">
+            <header class="mb-6">
+                <h1 class="text-3xl font-bold text-primary mb-2">《全球恐慌》</h1>
+                <div class="flex items-center text-secondary">
+                    <i class="fas fa-user mr-2"></i>
+                    <span class="mr-4">作者: 孥孥的大树</span>
+                    <i class="fas fa-clock mr-2"></i>
+                    <span>发布时间: 近期</span>
+                </div>
+            </header>
+
+            <main class="flex-grow flex flex-row gap-6 overflow-hidden">
+                <div class="w-1/2 flex flex-col">
+                    <div class="mb-6">
+                        <h2 class="text-xl font-semibold text-primary mb-3 flex items-center">
+                            <i class="fas fa-newspaper mr-2"></i>文章概要
+                        </h2>
+                        <p class="text-gray-700 leading-relaxed">
+                            文章讨论了全球资本市场因贸易摩擦引发的恐慌性下跌，作者认为这是灰犀牛事件而非黑天鹅，并提供了投资策略建议，强调在恐慌中寻找买入机会，特别是核心资产和宽基指数基金。
+                        </p>
+                    </div>
+
+                    <div class="flex-grow">
+                        <h2 class="text-xl font-semibold text-primary mb-3 flex items-center">
+                            <i class="fas fa-lightbulb mr-2"></i>核心论点
+                        </h2>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-accent mt-1 mr-2"></i>
+                                <span>全球资本市场因贸易摩擦出现恐慌性下跌，但这是灰犀牛事件，不是黑天鹅</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-accent mt-1 mr-2"></i>
+                                <span>投资应化繁为简，关注核心资产和宽基指数基金，与国家队的买入方向一致</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-accent mt-1 mr-2"></i>
+                                <span>当前A股估值处于中位数略低水平，若进一步下跌至3100点以下，将是买入机会</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-accent mt-1 mr-2"></i>
+                                <span>投资者应避免过度恐慌，有序买入，而不是试图抄底或频繁操作</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="w-1/2">
+                    <h2 class="text-xl font-semibold text-primary mb-3 flex items-center">
+                        <i class="fas fa-chart-line mr-2"></i>基金产品(组合)
+                    </h2>
+                    <div class="grid grid-cols-2 gap-4 h-full overflow-y-auto">
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h3 class="font-medium text-primary mb-2">沪深300指数相关基金</h3>
+                            <p class="text-sm text-gray-600">买入，当前估值合理略低，若跌至3500点（对应跌幅9%）则进入低估区域</p>
+                        </div>
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h3 class="font-medium text-primary mb-2">创业板指数基金</h3>
+                            <p class="text-sm text-gray-600">买入，国家队可能买入的方向</p>
+                        </div>
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h3 class="font-medium text-primary mb-2">纳斯达克指数基金</h3>
+                            <p class="text-sm text-gray-600">有节奏布局美股核心资产，当前估值中位水平，值得买入</p>
+                        </div>
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h3 class="font-medium text-primary mb-2">红利基金</h3>
+                            <p class="text-sm text-gray-600">长期配置方向，低利率低增速时代值得关注</p>
+                        </div>
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h3 class="font-medium text-primary mb-2">港股核心资产基金</h3>
+                            <p class="text-sm text-gray-600">布局港股核心资产，与国家队的买入方向一致</p>
+                        </div>
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h3 class="font-medium text-primary mb-2">A股核心资产基金</h3>
+                            <p class="text-sm text-gray-600">抱国家队大腿的方向，适合多数散户</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <footer class="mt-4 pt-4 border-t border-gray-100 text-sm text-gray-600 flex justify-between">
+                <span><i class="fas fa-user mr-1"></i>孥孥的大树</span>
+                <span><i class="fas fa-clock mr-1"></i>近期发布</span>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

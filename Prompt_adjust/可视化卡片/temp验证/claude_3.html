@@ -1,1 +1,116 @@
-<!DOCTYPE html>\n<html lang=\"zh\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>文章摘要卡片</title>\n    <script src=\"https://cdn.tailwindcss.com\"></script>\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css\">\n\n    <script>\n        tailwind.config = {\n            theme: {\n                extend: {\n                    colors: {\n                        primary: '#3a5a7d',\n                        secondary: '#e63946',\n                        accent: '#f1faee',\n                        bglight: '#f8f9fa'\n                    },\n                    width: {\n                        'card': '1080px'\n                    },\n                    height: {\n                        'card': '600px'\n                    }\n                }\n            }\n        };\n    </script>\n\n    <style>\n        .text-clamp-2 {\n            display: -webkit-box;\n            -webkit-line-clamp: 2;\n            -webkit-box-orient: vertical;\n            overflow: hidden;\n        }\n\n        .text-clamp-3 {\n            display: -webkit-box;\n            -webkit-line-clamp: 3;\n            -webkit-box-orient: vertical;\n            overflow: hidden;\n        }\n        \n        .text-clamp-4 {\n            display: -webkit-box;\n            -webkit-line-clamp: 4;\n            -webkit-box-orient: vertical;\n            overflow: hidden;\n        }\n    </style>\n</head>\n<body class=\"bg-gray-100 flex justify-center items-center min-h-screen p-5\">\n    <div class=\"w-card h-card bg-white rounded-xl shadow-lg overflow-hidden\">\n        <div class=\"h-full flex flex-col\">\n            <!-- 顶部标题区域 -->\n            <header class=\"bg-primary text-white px-8 py-6\">\n                <h1 class=\"text-3xl font-bold tracking-tight text-clamp-2\">《NND，我也炸了》</h1>\n                <p class=\"mt-1 text-sm text-gray-200\">作者对A股剧烈下跌的感受与市场分析</p>\n            </header>\n\n            <main class=\"flex-grow flex flex-row overflow-hidden p-8\">\n                <!-- 左侧内容：文章概要和核心论点 -->\n                <div class=\"w-1/2 pr-6 border-r border-gray-200\">\n                    <div class=\"mb-6\">\n                        <div class=\"flex items-center mb-3\">\n                            <i class=\"fas fa-chart-line text-secondary mr-3 text-xl\"></i>\n                            <h2 class=\"text-xl font-semibold text-primary\">文章概要</h2>\n                        </div>\n                        <p class=\"text-gray-700 leading-relaxed text-clamp-4\">\n                            作者记录了A股大跌日的市场情况，上证跌7.34%、科创板跌9.22%，恐慌程度堪比2020年新冠爆发时期。作者分享了自己的投资经验，强调在市场波动中的生存之道，并对市场前景持谨慎乐观态度。\n                        </p>\n                    </div>\n\n                    <div>\n                        <div class=\"flex items-center mb-3\">\n                            <i class=\"fas fa-lightbulb text-secondary mr-3 text-xl\"></i>\n                            <h2 class=\"text-xl font-semibold text-primary\">核心论点</h2>\n                        </div>\n                        <ul class=\"space-y-3\">\n                            <li class=\"flex\">\n                                <span class=\"text-secondary mr-2\">•</span>\n                                <p class=\"text-gray-700\">今日A股暴跌(-7.34%)的恐慌程度接近2020年新冠爆发时期(-7.72%)</p>\n                            </li>\n                            <li class=\"flex\">\n                                <span class=\"text-secondary mr-2\">•</span>\n                                <p class=\"text-gray-700\">投资者应保持现金储备，避免加杠杆，以度过市场大幅波动</p>\n                            </li>\n                            <li class=\"flex\">\n                                <span class=\"text-secondary mr-2\">•</span>\n                                <p class=\"text-gray-700\">造成大亏损的通常不是恐慌大跌，而是高位买入导致长期套牢</p>\n                            </li>\n                            <li class=\"flex\">\n                                <span class=\"text-secondary mr-2\">•</span>\n                                <p class=\"text-gray-700\">当前上证3000-3400点估值不算高，历史表明恐慌性下跌后市场可能会修复</p>\n                            </li>\n                            <li class=\"flex\">\n                                <span class=\"text-secondary mr-2\">•</span>\n                                <p class=\"text-gray-700\">市场逆转可能需要强有力的促消费、促内需政策支持</p>\n                            </li>\n                        </ul>\n                    </div>\n                </div>\n\n                <!-- 右侧内容：基金产品及观点 -->\n                <div class=\"w-1/2 pl-6\">\n                    <div class=\"flex items-center mb-4\">\n                        <i class=\"fas fa-hand-holding-usd text-secondary mr-3 text-xl\"></i>\n                        <h2 class=\"text-xl font-semibold text-primary\">投资策略与市场观察</h2>\n                    </div>\n                    \n                    <div class=\"bg-bglight rounded-lg p-5 mb-4\">\n                        <h3 class=\"text-lg font-medium text-primary mb-2\">作者的投资组合特点</h3>\n                        <p class=\"text-gray-700 mb-3\">以收息股为主，配置水电类防御性资产作为\"压舱石\"</p>\n                        <div class=\"flex items-center text-gray-600\">\n                            <i class=\"fas fa-info-circle text-secondary mr-2\"></i>\n                            <p>今日账户表现: <span class=\"font-semibold text-secondary\">-4%+</span></p>\n                        </div>\n                    </div>\n                    \n                    <div class=\"bg-bglight rounded-lg p-5\">\n                        <h3 class=\"text-lg font-medium text-primary mb-2\">市场对比分析</h3>\n                        <div class=\"space-y-3\">\n                            <div class=\"flex items-center\">\n                                <div class=\"w-32 font-medium\">今日上证指数:</div>\n                                <div class=\"text-secondary font-bold\">-7.34%</div>\n                            </div>\n                            <div class=\"flex items-center\">\n                                <div class=\"w-32 font-medium\">科创板指数:</div>\n                                <div class=\"text-secondary font-bold\">-9.22%</div>\n                            </div>\n                            <div class=\"flex items-center\">\n                                <div class=\"w-32 font-medium\">2020年疫情:</div>\n                                <div class=\"text-gray-700\">-7.72%</div>\n                            </div>\n                            <div class=\"flex items-center\">\n                                <div class=\"w-32 font-medium\">2019年贸易战:</div>\n                                <div class=\"text-gray-700\">-5.58%</div>\n                            </div>\n                        </div>\n                        <div class=\"mt-4 pt-3 border-t border-gray-200\">\n                            <div class=\"flex\">\n                                <i class=\"fas fa-exclamation-triangle text-yellow-500 mt-1 mr-2\"></i>\n                                <p class=\"text-gray-700 text-sm\">作者提示：国家队已在尾盘介入，购买宽基ETF，但市场可能需要更强刺激政策</p>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </main>\n\n            <footer class=\"px-8 py-4 border-t border-gray-200 text-sm flex justify-between text-gray-600 bg-gray-50\">\n                <div class=\"flex items-center\">\n                    <i class=\"fas fa-user-edit text-primary mr-2\"></i>\n                    <span>越女事务所</span>\n                </div>\n                <div class=\"flex items-center justify-end space-x-4\">\n                    <div class=\"flex items-center\">\n                        <i class=\"fas fa-chart-bar text-primary mr-2\"></i>\n                        <span>A股市场分析</span>\n                    </div>\n                </div>\n            </footer>\n        </div>\n    </div>\n</body>\n</html>
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xcTech_公众号文章摘要AIagent</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script> tailwind.config = { theme: { extend: { colors: { primary: '#2C3E50', secondary: '#E74C3C', accent: '#3498DB' }, width: { 'card': '1080px' }, height: { 'card': '600px' } } } }; </script>
+    <style>
+        .text-clamp-2 {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .text-clamp-3 {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 flex justify-center items-center min-h-screen p-5">
+    <div class="w-card h-card bg-white rounded-xl shadow-lg overflow-hidden">
+        <div class="p-8 h-full flex flex-col">
+            <header class="mb-6">
+                <h1 class="text-3xl font-bold text-primary">《NND，我也炸了》</h1>
+            </header>
+            <main class="flex-grow flex flex-row gap-6 overflow-hidden">
+                <div class="w-1/2 pr-4">
+                    <div class="mb-6">
+                        <div class="flex items-center mb-3"> <i
+                                class="fas fa-chart-line text-secondary text-xl mr-3"></i>
+                            <h2 class="text-xl font-semibold text-primary">文章概要</h2>
+                        </div>
+                        <p class="text-gray-700">
+                            作者分享了A股剧烈下跌当天的感受和应对之道，上证指数单日下跌7.34%，恐慌程度堪比2020年新冠爆发时期，作者强调投资不加杠杆的重要性，并展望未来可能的修复路径。</p>
+                    </div>
+                    <div>
+                        <div class="flex items-center mb-3"> <i class="fas fa-lightbulb text-accent text-xl mr-3"></i>
+                            <h2 class="text-xl font-semibold text-primary">核心论点</h2>
+                        </div>
+                        <ul class="text-gray-700 space-y-3">
+                            <li class="flex items-start"> <i class="fas fa-circle text-xs text-accent mt-1.5 mr-2"></i>
+                                <p>本次市场恐慌（上证-7.34%）直追2020年新冠爆发初期的恐慌烈度（-7.72%）</p>
+                            </li>
+                            <li class="flex items-start"> <i class="fas fa-circle text-xs text-accent mt-1.5 mr-2"></i>
+                                <p>投资中不借钱、不加杠杆是关键，能让投资者有机会在大跌后存活并等待回血</p>
+                            </li>
+                            <li class="flex items-start"> <i class="fas fa-circle text-xs text-accent mt-1.5 mr-2"></i>
+                                <p>账户难以修复的亏损通常来自高位买入套牢，而非恐慌大跌本身</p>
+                            </li>
+                            <li class="flex items-start"> <i class="fas fa-circle text-xs text-accent mt-1.5 mr-2"></i>
+                                <p>历史上的恐慌日(如2019年、2020年)后，市场最终都出现了修复，全年仍有正收益</p>
+                            </li>
+                            <li class="flex items-start"> <i class="fas fa-circle text-xs text-accent mt-1.5 mr-2"></i>
+                                <p>期待强有力的促内需、促消费政策出台，如降房贷、发放补贴等措施</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="w-1/2 bg-gray-50 p-5 rounded-xl">
+                    <div class="flex items-center mb-4"> <i
+                            class="fas fa-money-bill-trend-up text-secondary text-xl mr-3"></i>
+                        <h2 class="text-xl font-semibold text-primary">市场行情与投资策略</h2>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <h3 class="font-medium text-secondary mb-2">今日市场表现</h3>
+                            <ul class="text-gray-700 space-y-2">
+                                <li class="flex items-center"> <i class="fas fa-arrow-trend-down text-red-600 mr-2"></i>
+                                    <span>上证指数: -7.34%</span> </li>
+                                <li class="flex items-center"> <i class="fas fa-arrow-trend-down text-red-600 mr-2"></i>
+                                    <span>科创板: -9.22%</span> </li>
+                                <li class="flex items-center"> <i class="fas fa-arrow-trend-down text-red-600 mr-2"></i>
+                                    <span>作者账户: -4%多</span> </li>
+                                <li class="flex items-center"> <i class="fas fa-arrow-trend-up text-green-600 mr-2"></i>
+                                    <span>国债: 大涨</span> </li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <h3 class="font-medium text-secondary mb-2">应对策略</h3>
+                            <ul class="text-gray-700 space-y-2">
+                                <li class="flex items-start"> <i class="fas fa-shield text-accent mr-2 mt-1"></i>
+                                    <span>保持子弹，不满仓操作</span> </li>
+                                <li class="flex items-start"> <i class="fas fa-shield text-accent mr-2 mt-1"></i>
+                                    <span>策略保守，收息为主</span> </li>
+                                <li class="flex items-start"> <i class="fas fa-shield text-accent mr-2 mt-1"></i>
+                                    <span>配置存款、债券分散风险</span> </li>
+                                <li class="flex items-start"> <i class="fas fa-ban text-red-500 mr-2 mt-1"></i>
+                                    <span>严禁借钱投资、加杠杆</span> </li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <h3 class="font-medium text-secondary mb-2">政策展望</h3>
+                            <p class="text-gray-700">国家队尾盘出手买入宽基ETF，期待更强有力的促内需、促消费政策出台</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="mt-4 pt-4 border-t border-gray-100 text-sm text-gray-600 flex justify-between">
+                <div class="flex items-center"> <i class="fas fa-user mr-2 text-secondary"></i> <span>作者：越女事务所</span>
+                </div>
+                <div class="flex items-center"> <i class="fas fa-clock mr-2 text-secondary"></i> <span>文章未注明发布日期</span>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

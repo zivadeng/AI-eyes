@@ -1,0 +1,13 @@
+import pandas as pd
+import json
+
+# 读取 JSON 数据
+with open('etf_data_20250417_072316.json', 'r', encoding='utf-8') as f:
+    data = json.load(f)
+
+# 将 JSON 数据转换为 DataFrame
+df = pd.DataFrame(data['data']['list'])
+
+# 将 DataFrame 保存为 CSV 文件
+csv_file_path = 'etf_data.csv'
+df.to_csv(csv_file_path, index=False)

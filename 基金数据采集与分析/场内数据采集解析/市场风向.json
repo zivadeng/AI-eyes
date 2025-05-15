@@ -1,0 +1,85 @@
+{
+    "data1": {
+        "id": "20250513c97bb084b5744f719b76e9da55821cb2",
+        "createdDate": 1747099540000,
+        "updatedDate": 1747099540000,
+        "key": "w353952",
+        "pageId": "20220920c7da437d86324e6ea358ad157fac643c",
+        "position": 18,
+        "type": "ui_title_xl",
+        "extra": "{\"title\":\"市场风向\",\"subtitle\":\"精准聚焦ETF投资机会\",\"bg\":\"\",\"moreUrl\":\"\",\"moreText\":\"\"}",
+        "status": "0"
+    },
+    "data2": {
+        "id": "202505142624ed2b4b9e42af8a32624f0a8d6223",
+        "createdDate": 1747188356371,
+        "key": "SPW4780",
+        "position": 19,
+        "type": "etf_market_heat",
+        "extra": {
+            "sortUp": "",
+            "cardList": [
+                {
+                    "indiName": "increase",
+                    "indiCnName": "涨跌幅",
+                    "secIndiName": "oneYearRise",
+                    "secIndiCnName": "近一年",
+                    "cardId": "EX10084274",
+                    "ommName": "人工智能驱动 中国科技资产重估",
+                    "quoteCode": "SH512930",
+                    "tabName": "人工智能",
+                    "content": "DeepSeek"
+                },
+                {
+                    "indiName": "increase",
+                    "indiCnName": "涨跌幅",
+                    "secIndiName": "oneYearRise",
+                    "secIndiCnName": "近一年",
+                    "cardId": "EX10085694",
+                    "ommName": "买黄金 避险保值抗通胀",
+                    "quoteCode": "SH518880",
+                    "tabName": "黄金",
+                    "content": "资产配置",
+                    "btnName": ""
+                },
+                {
+                    "indiName": "increase",
+                    "indiCnName": "涨跌幅",
+                    "secIndiName": "oneYearRise",
+                    "secIndiCnName": "近一年",
+                    "tabName": "红利",
+                    "quoteCode": "SH513820",
+                    "content": "高分红",
+                    "cardId": "EX10083776",
+                    "ommName": "低利率时代 股息率为王？"
+                },
+                {
+                    "indiName": "increase",
+                    "indiCnName": "涨跌幅",
+                    "secIndiName": "totalValueTrade",
+                    "secIndiCnName": "成交额",
+                    "tabName": "现金流",
+                    "content": "新聪明因子",
+                    "cardId": "EX10084634",
+                    "ommName": "首批自由现金流ETF来了",
+                    "quoteCode": "SZ159399"
+                },
+                {
+                    "indiName": "increase",
+                    "indiCnName": "涨跌幅",
+                    "secIndiName": "oneYearRise",
+                    "secIndiCnName": "近一年",
+                    "cardId": "EX10085614",
+                    "ommName": "关税谈判信号释放 汇率走强",
+                    "quoteCode": "SZ159740",
+                    "tabName": "港股",
+                    "content": "中国资产"
+                }
+            ],
+            "sdcAlias": "ETFSCDMP"
+        },
+        "status": "0",
+        "sdcAlias": "ETFSCDMP",
+        "subPageId": "ETF_DMP"
+    }
+}

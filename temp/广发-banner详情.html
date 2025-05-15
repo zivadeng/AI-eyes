@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="https://m.stock.pingan.com/favicon.ico" type="image/x-icon">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="canonical" href="">
+    <link rel="preconnect" href="//pacdn.m.stock.pingan.com">
+    <link rel="preconnect" href="//cdn.m.stock.pingan.com" crossorigin>
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="applicable-device" content="mobile">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta name="stop-back-reload" content="true">
+    <meta name="pazq-webview-foot" content="true">
+    <script>
+        try {
+			//app会将一些埋点参数拼接在hash中,导致单页路由无法识别,需要将这些参数拼接到对的地方
+			if (location.hash.indexOf('&') !== -1) {
+				location.replace(location.origin + location.pathname + (location.search ? location.search : '?') + location.hash.substring(location.hash.indexOf('&')) + location.hash.substring(0, location.hash.indexOf('&')))
+			}
+		} catch(e){}
+		
+		(function() {
+			// 使用 PerformanceObserver 监听 fcp
+			if (!!PerformanceObserver){
+				try {
+					var observer = new PerformanceObserver(function(perf) {
+						perf.getEntries().forEach(function(timing) {
+							var name = timing.name;
+							var time = Math.round(timing.startTime + timing.duration);
+							if (name.indexOf('page_show') !== -1) {
+								if (window.C && window.C.SDC && typeof window.C.SDC.performance === 'function') {
+									var nameArr = name.split('|');
+									window.C.SDC.performance(nameArr[0], time, nameArr[1]);
+								}
+							}
+						})
+					});
+					observer.observe({
+						entryTypes: ['longtask','mark','paint']
+					});
+				} catch (e) {
+					console.warn('PerformanceObserver error:', (e || {}).message ? e.message : e);
+				}
+			}
+		})()
+    </script>
+    <link rel="stylesheet" id="app-css-link"
+        href="https://pacdn.m.stock.pingan.com/omm/phonex/css/app.css?_v=1745489622225" type="text/css">
+    <link rel="stylesheet" href="https://pacdn.m.stock.pingan.com/omm/phonex/css/pagemaker.css?_v=1745489622225"
+        type="text/css">
+    <script type="text/javascript" src="https://pacdn.m.stock.pingan.com/omm/phonex/js/flexible.js?v=20250424181342">
+    </script>
+    <script type="text/javascript">
+        if(location.hostname.indexOf("stock.pingan.com")!=-1 && location.protocol=="http:"  && location.href.indexOf('debug') == -1){
+	        location.href = location.href.replace("http:","https:");
+	    }
+		if(navigator.userAgent.match(/iphone|ipod|android/ig) && location.hostname == "stock.pingan.com" && location.href.indexOf('debug') == -1){
+	        location.hostname = "m.stock.pingan.com"
+	    }
+		var _app = {
+			env : "PRD",
+			ctx : "/omm/phonex",
+			cdnHost:"https://pacdn.m.stock.pingan.com",
+			scdn : "https://pacdn.m.stock.pingan.com/omm/phonex/",
+			version:"1.199.0",
+			ts:"20250424181342",
+			name:"app",
+			mode: 'ONLINE',
+			iTime: +new Date(),
+			jscdn:true,
+			localPage: '/index.html,/home/index.html,/page/index.html,/404.html'
+		};
+		(function(){
+			var ua=navigator.userAgent,
+				pChannelData, 
+				noHeader = ua.match(/AYLCAPP/ig)  && !ua.match(/anydoor/ig);
+			try {
+				if(localStorage){
+					pChannelData = JSON.parse(localStorage.getItem("P_CHANNEL"));
+					if (!noHeader) {
+						noHeader = ua.match(/lufax/ig) && (pChannelData === 'luzhengtong' || pChannelData === 'lu_fixed');
+					}
+					if (!noHeader) {
+						noHeader = pChannelData === 'paAJJ';
+					}
+					if (!noHeader) {
+						noHeader = ua.match(/PAZQBANK/ig);
+					}
+				}
+	        } catch (e) {}
+			if(noHeader){
+				var style = document.createElement("style");
+				style.type="text/css";
+				style.innerHTML = "#main-header{display:none;}";
+				document.head.appendChild(style);
+			}
+		})();
+		window.onload = function() {
+			var versionReg = /AYLCAPP\/([\d\.]+)/g;
+			var appVerStr = versionReg.exec(navigator.userAgent);
+			if(appVerStr){
+				appVerStr = (appVerStr[1] || '').split('.')[0];
+				if (appVerStr < 7) {
+					document.body.className += ' ane_6';
+				}
+			}
+			try {
+				var theme = (location.search.match(/_pazq_theme=([a-z]*)/) || [])[1] || '';
+				if (theme === 'black') {
+					document.body.className += ' skin-blacks'
+				}
+				if (location.search.indexOf('_common_scheme=false') !== -1) {
+					window._DISABLE_COMMON_SCHEME = true;
+				}
+			} catch(e) {}
+			
+		}
+    </script>
+</head>
+<style>
+    #main-header {
+        display: none;
+    }
+</style>
+
+<body id="index">
+    <div id="main-header">
+        <header>
+            <div class="head">
+                <h1 id="main-header-title"></h1>
+            </div><a href="javascript:void(0);" data-btn-type="back" data-btn-text="" title="返回" td-type="button"
+                td-event="01-公共部分" td-label="0101-返回" id="headerLeft"><i class="header_icon_return"></i></a><a
+                href="javascript:void(0);" data-btn-type="" data-btn-text="" td-type="button" td-event="01-公共部分"
+                td-label="0102-首页" id="headerRight"></a>
+            <div class="head-popup" style="display:none;">
+                <ul class="head-popup_list"></ul>
+            </div>
+        </header>
+        <div style="height:.87rem;width:100%;"></div>
+    </div>
+    <div id="app" style="visibility:hidden;" v-cloak>
+        <div>
+            <div v-if="page" v-for="item in page.widgets" :item-key="item.key" :data-pm-type="item.type"
+                v-show="!item.hide" :class="item.skin">
+                <component :config="item.config" :context="context" :item-key="item.key" :alias="item.sdcAlias"
+                    v-bind:is="item.type" :hide="item.hide"></component>
+            </div>
+        </div>
+        <section v-if="pageError">
+            <div class="bg-wrap-top text-center"><img src="https://pacdn.m.stock.pingan.com/omm/phonex/images/index/adbfour1.e4a047.png?_v=1745489622225" alt="image" style="width: 3.52rem; height:2.9rem;">
+            </div>
+            <div style="margin-top:0.5rem;font-size:0.3rem;text-align:center;">很抱歉，页面不存在或已下线</div>
+        </section>
+        <section v-if="page.authResult && page.authResult=='false'"
+            style="padding:0 .3rem;height:100%;background-color: #fff;position:fixed;width: 100%;">
+            <div v-if="page.authObj">
+                <div class="text-center">
+                    <div style="height:7rem;overflow-y:hidden;"><img v-if="page.authObj.icon" :src="page.authObj.icon" alt="image" style="max-width: 3.52rem; max-height:2.9rem;">
+                        <img v-else src="https://pacdn.m.stock.pingan.com/omm/mobile/wxapp/images/bg.png" style="width:100%;">
+                    </div>
+                </div>
+                <div style="font-size:0.3rem;line-height: .4rem;">{{page.authObj.context}}</div>
+                <ul class="btn-listb" v-if="isLogin != undefined">
+                    <li>
+                        <div v-if="isLogin"><a href="javascript:void(0);" class="btn_b" td-type="button"
+                                td-event="pm页面鉴权" td-label="鉴权解锁" :td-map="{'authKey':page.authObj.key}|tdMap"
+                                v-on:click="authTo(page.authObj.skipUrl)"><span>{{authConfig.btnText||'立即查看'}}</span></a>
+                        </div>
+                        <div v-else>
+                            <div style="padding:0.5rem 0;text-align: center;color:#aaa;">{{authConfig.btnText}}</div><a
+                                href="javascript:void(0);" class="btn_b" td-type="button" td-event="pm页面鉴权"
+                                td-label="鉴权解锁" :td-map="{'authKey':page.authObj.key}|tdMap"
+                                v-on:click="authTo(page.authObj.skipUrl)"><span>请登录查看</span></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <div v-if="beta">
+            <div style="position: fixed;
+    width: 100%;
+    text-align: center;
+    padding: 0.01rem;
+    top: 0px;
+    left: 0px;
+    z-index: 6000;
+    line-height: 0.3rem;
+    font-size: 0.2rem;
+    color: rgb(255, 255, 255);
+    background-color: rgba(193, 16, 0, 0.8);">{{beta}}</div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="https://pacdn.m.stock.pingan.com/omm/phonex/lib/loader.js?v=20250424181342">
+</script>
+<script type="text/javascript">
+    (function(){
+        var baseUrl = "/omm/phonex";
+        if(_app.jscdn){
+            baseUrl = _app.scdn;
+        }
+        
+            basket.require({ url: '/omm/static/manual/code/version/index.js?v='+parseInt(new Date().getTime()/(5*60*1000)),key: 'basket_version',skipCache:true}).then(function() {
+                return true;
+            }, function(){
+                return basket.require({ url: '/omm/phonex/js/version.js?v='+parseInt(new Date().getTime()/(5*60*1000)),key: 'basket_version',skipCache:true})
+            })
+        
+        .then(function(){
+            var v = window._appver.v || _app.ts;
+            requirejs.config({baseUrl:baseUrl});
+
+            var _func = function() {
+                
+                    
+                    require(["modules/page/index"]);
+                    
+
+                 
+                
+                window.onerror = function(message, source, lineno, colno, error) {
+                    console.log(message, source, lineno, colno, error);
+                }
+            }
+
+            try {
+                if (location.search.indexOf('eruda=true') !== -1) {
+                    localStorage.setItem('LC_CONSOLE', 'true');
+                    _appver.showConsole = true;
+                }
+                if (JSON.parse(window.localStorage.getItem('LC_CONSOLE')) === true && _appver.showConsole) {
+                    require(['eruda'],function(eruda){
+                        if (!window._ERUDA) {
+                            window._ERUDA = true;
+                            eruda.init();
+                        }
+                        _func();
+                    });
+                } else {
+                    _func();
+                }
+            } catch(e) {
+                _func();
+            }
+        })
+    })()
+</script>
+<script type="text/javascript"
+    src="https://pacdn.m.stock.pingan.com/omm/phonex/lib/wiseapm/agent.prd.min.js?v=20250424181342"></script>
+
+</html>

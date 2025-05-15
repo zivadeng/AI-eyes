@@ -1,0 +1,75 @@
+{
+    "extra": {
+        "time": "8",
+        "list": [
+            {
+                "type": "",
+                "label": "",
+                "title": "今日热点",
+                "tag": "",
+                "poolId": "ETFNEWS",
+                "itemLink": "",
+                "contType": "pool",
+                "titLink": "https://m.stock.pingan.com/omm/phonex/page/index.html?key=p216922"
+            },
+            {
+                "type": "",
+                "label": "",
+                "title": "洞悉全球",
+                "tag": "",
+                "poolId": "",
+                "itemLink": "",
+                "commId": "9742",
+                "titLink": "https://m.stock.pingan.com/omm/mobile/comm/index.html?id=9742"
+            },
+            {
+                "contType": "",
+                "label": "",
+                "title": "机会观察",
+                "tag": "",
+                "poolId": "",
+                "itemLink": "",
+                "commId": "9651",
+                "titLink": "https://m.stock.pingan.com/omm/mobile/comm/index.html?id=9651"
+            },
+            {
+                "type": "",
+                "label": "",
+                "title": "交易策略",
+                "tag": "",
+                "poolId": "",
+                "itemLink": "https://m.stock.pingan.com/omm/phonex/page/index.html?key=p216825&WT.mc_id=APP_ETFZQ_LC&from=native",
+                "titLink": "https://m.stock.pingan.com/omm/phonex/page/index.html?key=p217005&WT.mc_id=APP_ETFZQ_LC&from=native",
+                "contType": "zdy",
+                "desc": "投资不是一蹴而就，定期买一点，摊平成本，降低风险",
+                "zdyContent": "SH513220"
+            },
+            {
+                "type": "",
+                "label": "",
+                "title": "T+0战法",
+                "tag": "",
+                "poolId": "",
+                "itemLink": "https://m.stock.pingan.com/omm/phonex/page/index.html?key=p216991&WT.mc_id=APP_ETFZQ_LC&from=native",
+                "titLink": "https://m.stock.pingan.com/omm/phonex/page/index.html?key=p216955&WT.mc_id=APP_ETFZQ_LC&from=native",
+                "commId": "",
+                "contType": "zdy",
+                "desc": "哪些ETF可以进行T+0套利？",
+                "zdyContent": "SZ159751"
+            },
+            {
+                "type": "",
+                "label": "",
+                "title": "入市攻略",
+                "tag": "",
+                "poolId": "",
+                "itemLink": "https://m.stock.pingan.com/omm/phonex/page/index.html?key=p217145&WT.mc_id=APP_ETFZQ_LC&from=native",
+                "contType": "zdy",
+                "titLink": "https://m.stock.pingan.com/omm/phonex/page/index.html?key=p215601&WT.mc_id=APP_ETFZQ_LC&from=native",
+                "desc": "避险情绪升温，金价重回3400",
+                "zdyContent": "SH518880"
+            }
+        ]
+    },
+    "status": "0"
+}
